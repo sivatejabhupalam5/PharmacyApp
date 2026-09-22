@@ -1,36 +1,34 @@
 # ABC Pharmacy Medicine Tracker
 
-A single-page pharmacy inventory and sales application built with ASP.NET Core Web API and vanilla JavaScript. It helps pharmacy staff manage medicine stock, record sales, and review operational events.
+This project was built as a small pharmacy operations dashboard for tracking stocked medicines, recording sales, and reviewing daily activity. The goal was to keep the workflow simple: staff can add medicines, monitor expiry and low-stock warnings, log sales, and review recent events without relying on a heavy database setup.
 
-## Features
+## What the app does
 
-- View medicines in an inventory grid
-- Add medicines with name, notes, expiry date, quantity, price, and brand
-- Search medicines by name
-- Highlight medicines expiring within 30 days
-- Highlight medicines with fewer than 10 units in stock
-- Record medicine sales with stock validation and automatic quantity updates
-- Store medicines, sales, and event logs as JSON files on the server
-- Review information and warning events in the Event Log view
+- View the current medicine inventory in one place
+- Add new stock with brand, expiry date, quantity, price, and notes
+- Search for medicines by name
+- Highlight items that are near expiry or running low on stock
+- Record sales while automatically reducing inventory levels
+- Review the most recent operational events and warnings
 
-## Technology
+## Project setup
 
-- .NET 10 ASP.NET Core Web API
-- C# controllers and services
-- HTML, CSS, and JavaScript single-page frontend
-- JSON file persistence in `App_Data`
+- ASP.NET Core Web API backend
+- Plain HTML, CSS, and JavaScript frontend
+- JSON-based persistence in `App_Data` for a lightweight local deployment
+- Simple single-page workflow designed for day-to-day pharmacy use
 
-## Run Locally
+## Run locally
 
-From the parent directory:
+From the project folder:
 
 ```powershell
-dotnet run --project PharmacyApp --urls http://localhost:5080
+dotnet run --urls http://localhost:5080
 ```
 
-Open <http://localhost:5080> in a browser.
+Then open <http://localhost:5080> in a browser.
 
-## API Endpoints
+## API endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -41,10 +39,10 @@ Open <http://localhost:5080> in a browser.
 | POST | `/api/sales` | Record a sale and decrement stock |
 | GET | `/api/events?take=100` | List recent application events |
 
-## Data Files
+## Data files
 
-- `App_Data/medicines.json` stores inventory records.
-- `App_Data/sales.json` stores completed sales.
-- `App_Data/events.json` stores information and warning events, retaining the newest 500 entries.
+- `App_Data/medicines.json` stores inventory records
+- `App_Data/sales.json` stores completed sales
+- `App_Data/events.json` stores information and warning events, retaining the newest 500 entries
 
-This application uses JSON persistence for a lightweight local deployment. For production use, replace the JSON store with a transactional database and add authentication and authorization.
+This app was designed to be easy to run locally and easy to extend. For production use, the JSON store could be replaced with a transactional database and the app could be expanded with authentication and authorization.

@@ -3,7 +3,7 @@ using PharmacyApp.Models;
 
 namespace PharmacyApp.Services;
 
-/// <summary>Thread-safe store persisting medicines and sales to JSON files on the server.</summary>
+/// <summary>Thread-safe local data store for medicines, sales, and event history used by the pharmacy app.</summary>
 public class JsonDataStore
 {
     private static readonly JsonSerializerOptions SerializerOptions = new()

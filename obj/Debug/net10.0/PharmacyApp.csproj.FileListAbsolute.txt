@@ -23,7 +23,7 @@ C:\Users\tejas\OneDrive\Documents\Desktop\PharmacyApp\PharmacyApp\obj\Debug\net1
 C:\Users\tejas\OneDrive\Documents\Desktop\PharmacyApp\PharmacyApp\obj\Debug\net10.0\scopedcss\bundle\PharmacyApp.styles.css
 C:\Users\tejas\OneDrive\Documents\Desktop\PharmacyApp\PharmacyApp\obj\Debug\net10.0\compressed\puokaefoxd-{0}-hm37y619u3-hm37y619u3.gz
 C:\Users\tejas\OneDrive\Documents\Desktop\PharmacyApp\PharmacyApp\obj\Debug\net10.0\compressed\l8lw3wmopy-{0}-ipeo1kp6bh-ipeo1kp6bh.gz
-C:\Users\tejas\OneDrive\Documents\Desktop\PharmacyApp\PharmacyApp\obj\Debug\net10.0\compressed\e967bnnzve-{0}-eb82gqz22o-eb82gqz22o.gz
+C:\Users\tejas\OneDrive\Documents\Desktop\PharmacyApp\PharmacyApp\obj\Debug\net10.0\compressed\e967bnnzve-{0}-e6tcwwl96b-e6tcwwl96b.gz
 C:\Users\tejas\OneDrive\Documents\Desktop\PharmacyApp\PharmacyApp\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\tejas\OneDrive\Documents\Desktop\PharmacyApp\PharmacyApp\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\tejas\OneDrive\Documents\Desktop\PharmacyApp\PharmacyApp\obj\Debug\net10.0\staticwebassets.development.json

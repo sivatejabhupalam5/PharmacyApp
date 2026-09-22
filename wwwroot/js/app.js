@@ -89,7 +89,7 @@
     }
 
     function rowClass(medicine) {
-        // Expiry warning takes precedence over the low-stock warning.
+        // Business rule: expiry warnings take precedence over low-stock alerts.
         if (daysUntil(medicine.expiryDate) < 30) { return "expiring"; }
         if (medicine.quantity < 10) { return "low-stock"; }
         return "";
