@@ -16,5 +16,32 @@
     "message": "Sale rejected for Paracetamol 650mg: requested 999, available 2.",
     "entityType": "Medicine",
     "entityId": 2
+  },
+  {
+    "id": 3,
+    "timestampUtc": "2026-09-22T08:03:26.5886822Z",
+    "level": "Information",
+    "eventType": "SaleRecorded",
+    "message": "Sold 35 x azit for 0.00. Remaining stock 65.",
+    "entityType": "Sale",
+    "entityId": 5
+  },
+  {
+    "id": 4,
+    "timestampUtc": "2026-09-22T08:06:35.701221Z",
+    "level": "Information",
+    "eventType": "MedicineAdded",
+    "message": "Added Azithomicen (Apollo), qty 250 at 2500.00.",
+    "entityType": "Medicine",
+    "entityId": 5
+  },
+  {
+    "id": 5,
+    "timestampUtc": "2026-09-22T08:06:57.7299396Z",
+    "level": "Information",
+    "eventType": "SaleRecorded",
+    "message": "Sold 100 x Azithomicen for 250000.00. Remaining stock 150.",
+    "entityType": "Sale",
+    "entityId": 6
   }
 ]

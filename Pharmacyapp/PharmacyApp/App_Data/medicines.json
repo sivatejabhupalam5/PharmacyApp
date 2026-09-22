@@ -31,8 +31,17 @@
     "name": "azit",
     "notes": "caugh and syrap",
     "expiryDate": "2028-07-13",
-    "quantity": 100,
+    "quantity": 65,
     "price": 0,
     "brand": "Vcrest"
+  },
+  {
+    "id": 5,
+    "name": "Azithomicen",
+    "notes": "",
+    "expiryDate": "2027-01-22",
+    "quantity": 150,
+    "price": 2500,
+    "brand": "Apollo"
   }
 ]
