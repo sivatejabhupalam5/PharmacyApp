@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ABC Pharmacy - Medicine Tracker</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+
+<body>
+    <header>
+        <h1>ABC Pharmacy</h1>
+        <nav>
+            <button type="button" class="tab active" data-view="inventory">Inventory</button>
+            <button type="button" class="tab" data-view="add">Add Medicine</button>
+            <button type="button" class="tab" data-view="sales">Sales</button>
+            <button type="button" class="tab" data-view="events">Event Log</button>
+        </nav>
+    </header>
+
+    <main>
+        <p id="message" class="message hidden" role="status"></p>
+
+        <section id="view-inventory" class="view">
+            <div class="toolbar">
+                <input type="search" id="search" placeholder="Search by medicine name..." autocomplete="off" />
+                <span class="legend"><i class="swatch expiring"></i> Expires in &lt; 30 days</span>
+                <span class="legend"><i class="swatch low-stock"></i> Quantity &lt; 10</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Brand</th>
+                        <th>Expiry Date</th>
+                        <th class="num">Quantity</th>
+                        <th class="num">Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="medicine-rows"></tbody>
+            </table>
+        </section>
+
+        <section id="view-add" class="view hidden">
+            <form id="medicine-form" novalidate>
+                <label>Full Name<input type="text" name="name" maxlength="120" required /></label>
+                <label>Brand<input type="text" name="brand" maxlength="120" required /></label>
+                <label>Expiry Date<input type="date" name="expiryDate" required /></label>
+                <label>Quantity<input type="number" name="quantity" min="0" step="1" required /></label>
+                <label>Price<input type="number" name="price" min="0" step="0.01" required /></label>
+                <label class="full">Notes<textarea name="notes" maxlength="500" rows="3"></textarea></label>
+                <button type="submit">Save Medicine</button>
+            </form>
+        </section>
+
+        <section id="view-sales" class="view hidden">
+            <form id="sale-form" novalidate>
+                <label>Medicine<select name="medicineId" required></select></label>
+                <label>Quantity<input type="number" name="quantity" min="1" step="1" value="1" required /></label>
+                <label>Customer<input type="text" name="customerName" maxlength="120" /></label>
+                <button type="submit">Record Sale</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Medicine</th>
+                        <th class="num">Qty</th>
+                        <th class="num">Unit Price</th>
+                        <th class="num">Total</th>
+                        <th>Customer</th>
+                    </tr>
+                </thead>
+                <tbody id="sale-rows"></tbody>
+            </table>
+        </section>
+
+        <section id="view-events" class="view hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Timestamp (UTC)</th>
+                        <th>Level</th>
+                        <th>Event</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody id="event-rows"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

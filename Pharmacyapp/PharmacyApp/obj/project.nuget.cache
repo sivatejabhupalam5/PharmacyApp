@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "e6acRr9ukjI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tejas\\OneDrive\\Documents\\Desktop\\PharmacyApp\\PharmacyApp\\Pharmacyapp\\PharmacyApp\\PharmacyApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tejas\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "C:\\Users\\tejas\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}
