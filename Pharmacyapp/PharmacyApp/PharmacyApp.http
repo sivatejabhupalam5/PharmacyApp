@@ -1,6 +1,0 @@
-@PharmacyApp_HostAddress = http://localhost:5116
-
-GET {{PharmacyApp_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
